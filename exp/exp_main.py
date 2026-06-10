@@ -110,7 +110,7 @@ class Exp_Main(Exp_Basic):
                 # encoder - decoder
                 if self.args.use_amp:
                     with torch.cuda.amp.autocast():
-                        if any(substr in self.args.model for substr in {'Hlinear', ''}):
+                        if any(substr in self.args.model for substr in {'HLinear', ''}):
                             outputs = self.model(batch_x)
                         elif any(substr in self.args.model for substr in
                                  {'Linear', 'MLP', 'SegRNN', 'TST'}):
@@ -121,7 +121,7 @@ class Exp_Main(Exp_Basic):
                             else:
                                 outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark)
                 else:
-                    if any(substr in self.args.model for substr in {'Hlinear', ''}):
+                    if any(substr in self.args.model for substr in {'HLinear', ''}):
                         outputs = self.model(batch_x)
                     elif any(substr in self.args.model for substr in {'Linear', 'MLP', 'SegRNN', 'TST'}):
                         outputs = self.model(batch_x)
@@ -194,7 +194,7 @@ class Exp_Main(Exp_Basic):
                 # encoder - decoder
                 if self.args.use_amp:
                     with torch.cuda.amp.autocast():
-                        if any(substr in self.args.model for substr in {'Hlinear', ''}):
+                        if any(substr in self.args.model for substr in {'HLinear', ''}):
                             outputs = self.model(batch_x)
                         elif any(substr in self.args.model for substr in
                                  {'Linear', 'MLP', 'SegRNN', 'TST'}):
@@ -211,7 +211,7 @@ class Exp_Main(Exp_Basic):
                         loss = criterion(outputs, batch_y)
                         train_loss.append(loss.item())
                 else:
-                    if any(substr in self.args.model for substr in {'Hlinear', ''}):
+                    if any(substr in self.args.model for substr in {'HLinear', ''}):
                         outputs = self.model(batch_x)
                     elif any(substr in self.args.model for substr in {'Linear', 'MLP', 'SegRNN', 'TST'}):
                         outputs = self.model(batch_x)
@@ -308,7 +308,7 @@ class Exp_Main(Exp_Basic):
                 # encoder - decoder
                 if self.args.use_amp:
                     with torch.cuda.amp.autocast():
-                        if any(substr in self.args.model for substr in {'CycleNet', 'TQ'}):
+                        if any(substr in self.args.model for substr in {'HLinear', ''}):
                             outputs = self.model(batch_x)
                         elif any(substr in self.args.model for substr in
                                  {'Linear', 'MLP', 'SegRNN', 'TST'}):
@@ -319,7 +319,7 @@ class Exp_Main(Exp_Basic):
                             else:
                                 outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark)
                 else:
-                    if any(substr in self.args.model for substr in {'Hlinear', ''}):
+                    if any(substr in self.args.model for substr in {'HLinear', ''}):
                         outputs = self.model(batch_x)
                     elif any(substr in self.args.model for substr in {'Linear', 'MLP', 'SegRNN', 'TST'}):
                         outputs = self.model(batch_x)
@@ -418,7 +418,7 @@ class Exp_Main(Exp_Basic):
                 # encoder - decoder
                 if self.args.use_amp:
                     with torch.cuda.amp.autocast():
-                        if any(substr in self.args.model for substr in {'CycleNet', 'TQ'}):
+                        if any(substr in self.args.model for substr in {'HLinear', ''}):
                             outputs = self.model(batch_x)
                         elif any(substr in self.args.model for substr in
                                  {'Linear', 'MLP', 'SegRNN', 'TST'}):
@@ -429,7 +429,7 @@ class Exp_Main(Exp_Basic):
                             else:
                                 outputs = self.model(batch_x, batch_x_mark, dec_inp, batch_y_mark)
                 else:
-                    if any(substr in self.args.model for substr in {'Hlinear', ''}):
+                    if any(substr in self.args.model for substr in {'HLinear', ''}):
                         outputs = self.model(batch_x)
                     elif any(substr in self.args.model for substr in {'Linear', 'MLP', 'SegRNN', 'TST'}):
                         outputs = self.model(batch_x)
