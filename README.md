@@ -128,4 +128,4 @@ If you have any questions, please feel free to open an issue or contact the auth
 
 * Ziqiong Li
 * Central South University
-* Email: [242101007@csu.edu.cn](mailto:242101007@csu.edu.cn)
+* Email: [242101007@csu.edu.cn](mailto:qionglouyuyu@csu.edu.cn)
