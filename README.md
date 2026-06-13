@@ -124,8 +124,12 @@ If you would like to cite this work temporarily, please use the following format
 
 ## 8. Contact
 
-If you have any questions, please feel free to open an issue or contact the author.
+If you have any questions, please feel free to open an issue or contact the authors.
 
 * Ziqiong Li
-* Central South University
-* Email: [qionglouyuyu@csu.edu.cn](mailto:qionglouyuyu@csu.edu.cn)
+  Central South University
+  Email: [qionglouyuyu@csu.edu.cn](mailto:qionglouyuyu@csu.edu.cn)
+
+* Wenzhen Yue
+  Peking University
+  Email: [yuewenzhen@stu.pku.edu.cn](mailto:yuewenzhen@stu.pku.edu.cn)
