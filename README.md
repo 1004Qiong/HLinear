@@ -66,7 +66,7 @@ You can obtain the well-preprocessed datasets from Google Drive:
 https://drive.google.com/drive/folders/13Cg1KYOlzM5C7K8gK8NfC-F3EYxkM3D2
 ```
 
-After downloading the datasets, please place them in the folder `../dataset`, for example:
+After downloading the datasets, please place them in the folder `./dataset`, for example:
 
 ```text
 ../dataset/
@@ -102,7 +102,7 @@ For more experimental settings and model configurations, please refer to `run.py
 
 To reproduce the main experimental results reported in the paper, please make sure that:
 
-1. The datasets are downloaded and placed in the `../dataset` directory.
+1. The datasets are downloaded and placed in the `./dataset` directory.
 2. The running environment is consistent with `requirements.txt`.
 3. The training parameters, prediction lengths, and dataset settings follow the experimental settings in the paper.
 4. The experiments are launched through the parameter interface provided in `run.py`.
@@ -128,4 +128,4 @@ If you have any questions, please feel free to open an issue or contact the auth
 
 * Ziqiong Li
 * Central South University
-* Email: [242101007@csu.edu.cn](mailto:qionglouyuyu@csu.edu.cn)
+* Email: [qionglouyuyu@csu.edu.cn](mailto:qionglouyuyu@csu.edu.cn)
