@@ -8,11 +8,12 @@ import torch
 import torch.nn as nn
 from torch import optim
 from torch.optim import lr_scheduler
-
+import torch.nn.functional as F
 import os
 import time
 import warnings
 import numpy as np
+import math
 
 warnings.filterwarnings('ignore')
 
@@ -103,7 +104,7 @@ class Exp_Main(Exp_Basic):
 
     def _build_model(self):
         model_dict = {
-            'Hlinear': HLinear,
+            'HLinear': HLinear,
         }
         model = model_dict[self.args.model].Model(self.args).float()
 
