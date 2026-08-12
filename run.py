@@ -7,20 +7,23 @@ import numpy as np
 parser = argparse.ArgumentParser(description='Model family for Time Series Forecasting')
 
 # random seed
-parser.add_argument('--random_seed', type=int, default=2025, help='random seed')
+parser.add_argument('--random_seed', type=int, default=2026, help='random seed')
 
 # basic config
 parser.add_argument('--is_training', type=int, required=False, default=1, help='status')
 parser.add_argument('--model_id', type=str, required=False, default='test', help='model id')
 parser.add_argument('--model', type=str, required=False, default='HLinear',help='model name, options: [HLinear, Informer, Autoformer, ...]')
 
+d_router = 64
 n = 21
 name = 'weather'
+
 parser.add_argument('--loss_channels',type=int,default=n,help='Number of channels used in the loss function')
+parser.add_argument('--d_router',type=int,default=n,help='d_router dim')
 parser.add_argument('--lossfun_alpha', type=float, default=0., help='Additional α weight in the loss function')
 parser.add_argument('--loss_mode', type=str, default='L1',choices=['L1', 'L2', 'L1L2', 'MAPE', 'MASE', 'SMAPE'],help='loss type')
 parser.add_argument('--data', type=str, required=False, default='weather', help='dataset type')
-parser.add_argument('--root_path', type=str, default='./dataset/', help='root path of the data file')
+parser.add_argument('--root_path', type=str, default='../data/', help='root path of the data file')
 parser.add_argument('--data_path', type=str, default=f'{name}.csv', help='data file')
 parser.add_argument('--features', type=str, default='M',
                     help='forecasting task, options:[M, S, MS]; M:multivariate predict multivariate, S:univariate predict univariate, MS:multivariate predict univariate')
